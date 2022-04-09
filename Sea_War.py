@@ -122,3 +122,4 @@ def show(player):
 
 show(player1)
 show(player2)
+# MAKS POPUSK
