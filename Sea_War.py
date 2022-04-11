@@ -1,6 +1,7 @@
 import random
 import math
 from termcolor import colored
+from Rules import Rules
 
 v = 0
 
@@ -106,8 +107,9 @@ def main():
 
     def show(player):
         print()
-        print("Player 1") if player == player1 else print("Player 2")
+        print("Here you can see how the game field looks like")
         print()
+        print("-----------------------------")
 
         print("  ", end="")
         for i in range(10):
@@ -124,6 +126,15 @@ def main():
                     print(colored("* ", "white"), end="")
 
         print()
+        print("-----------------------------")
+        print("\n*All the designations and rules of our game you can see by clicking the action 'Rules' at the start of our program")
+
+        restart = input("\nDo you want to start playing? (Y/N): ").lower()
+        if restart == "y":
+            main()
+        elif restart == "n":
+            print("Thanks for playing! Enjoy the day!")
+            quit()
 
     def show_field(x, y):
         print()
@@ -147,7 +158,6 @@ def main():
 
     def play():
         global player1_hits, player1_misses, player2_hits, player2_misses, v
-        RED = "\x1b[1;31;40m"
 
         print()
         print("The game has stared, choose your nicknames")
@@ -231,13 +241,13 @@ def main():
             if not chk():
                 erase()
 
-            if len(player1_hits) == 1:
+            if len(player1_hits) == 20:
                 show_field(player1_hits, player1_misses)
                 print(colored(f"{p1}","red") + " won!")
                 print()
                 break
 
-            if len(player2_hits) == 1:
+            if len(player2_hits) == 20:
                 show_field(player2_hits, player2_misses)
                 print(colored(f"{p2}","red") + " won!")
                 print()
@@ -247,7 +257,15 @@ def main():
     create_game(player2)
 
     def rules():
-        pass
+        rules = Rules()
+        print(rules.notes())
+        restart = input("Do you want to start playing? (Y/N): ").lower()
+        if restart == "y":
+            play()
+        elif restart == "n":
+            print("Thanks for playing! Enjoy the day!")
+            quit()
+        
 
     # STARTING GAME
     print("-------------------------------------------------------------------------")
@@ -272,8 +290,12 @@ def main():
 
     elif inp == "play":
         play()
-        if input("Do you want to play again? (Y/N): ").lower() == "y":
-            main()
+        restart = input("Don`t you wanna play again? (Y/N): ").lower()
+        if restart == "y":
+            play()
+        elif restart == "n":
+            print("Thanks for playing! Enjoy the day!")
+            quit()
 
     elif inp == "rules":
         rules()
@@ -285,4 +307,3 @@ def main():
 
 if __name__ == "__main__":
     main()    
-    
