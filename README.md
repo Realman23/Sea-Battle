@@ -21,7 +21,7 @@
    <p>4) Each player takes turns hitting the enemy field, choosing the necessary coordinates.</p>
    <p>5) If the player hit some enemy ship, then this place is shown on the field with X. So the player beats until he misses, then the turn passes to another player.    </p>
    <p>6) A ship is considered sunk if all places around it at a distance of one pixel along the perimeter are painted over with a white circle 0.</p>
-   <p>7) The winner is the player who first sinks all enemy ships, that is, scores 20 X`s.</p>
+   <p>7) The winner is the player who first sinks all enemy ships, that is, scores 20 X`s .</p>
 </section>
 
 <section>
