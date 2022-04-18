@@ -27,5 +27,5 @@
 <section>
   <h3>© Copyright</h3>
     <p>Made by Realman#4585, Андрюшка#8543</p>
-    <p>You can copy/use our code for your projects, then just provide a link to this repository.</p>
+    <p>You can copy/use our code for your projects, then just provide a link to this repository. </p>
 </section>
