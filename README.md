@@ -8,7 +8,7 @@
 </section>
 <section>
   <h3>Some screenshots from our game:</h3>
-  <img src="https://cdn.discordapp.com/attachments/802934571939266636/965662119032930405/unknown.png" height="500px" width="500px"/>
+  <img src="https://cdn.discordapp.com/attachments/802934571939266636/965672550900326430/unknown.png" height="500px" width="500px"/>
   <img src="https://cdn.discordapp.com/attachments/802934571939266636/965662710710800394/unknown.png" height="500px" width="500px"/>
   <img src="https://cdn.discordapp.com/attachments/802934571939266636/965662880408170586/unknown.png" height="500px" width="500px"/>
 </section>
