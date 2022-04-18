@@ -15,7 +15,7 @@
 
 <section>
   <h3>Rules and designations</h3>
-   <p>1) Given two fields with randomly placed ships for both players, players will not be able to see both their own ships and the enemy (for more interest).</p>
+   <p>1) Given two fields with randomly placed ships for both players, players will not be able to see both their own ships and the enemy (for more interest). </p>
    <p>2) Each player has ten ships (1x4 pixels, 2x3 pixels, 3x2 pixels, 4x1 pixels).</p>
    <p>3) The coordinates are selected by first typing the coordinates on the x-axis (1-9), then on the y-axis (A-J). Coordinates must be written with a space between x    and y values. For example, the coordinates might look like this: E 9.</p>
    <p>4) Each player takes turns hitting the enemy field, choosing the necessary coordinates.</p>
